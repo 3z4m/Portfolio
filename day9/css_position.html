@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .box{
+            border:4px solid red ;
+            display: flex;
+            width: 50vw;
+            height: 50vw;
+            position: relative;
+        }
+        .minibox{ 
+            border: 2px solid;
+            height: 150px;
+            width: 150px;
+            font-size: 2rem;
+            text-align: center;
+            align-content: center;
+        }
+        #Static{
+            margin-top: 2rem;
+            background-color: midnightblue;
+            color: white;
+            position: static;
+        }
+        #Relative{
+            background-color: darkolivegreen;
+            position: relative;
+            left: 2rem;
+
+        }
+        #Absolute{
+            z-index: 2;
+            background-color: aqua;
+            position: absolute;
+            /* can't take background space */
+            right: 0;
+            bottom: 0;
+        }
+        #Fixed{
+            height: 50px;
+            width: 50px;
+            font-size: 2.5rem;
+            text-align: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+        }
+        nav{
+            height: 65px;
+            align-content: center;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 3;
+        }
+
+        ul{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            width: 50%;
+            box-shadow: 2px 2px 2px 2px rgb(219, 208, 208);
+            padding-left: 0;
+            padding: 1rem 2rem;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>Static</li>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li>Sticky</li>
+        </ul>
+    </nav>
+
+
+    <h1>CSS POSITIONS</h1>
+    <ol>
+        <li>Static - default position i.e top, bottom, left, right properties cannot be used</li>
+        <li>Relative - relative to it's normal position it cannot affect other element</li>
+        <li>Absolute - relative to nearest parent position</li>
+        <li>Fixed - relative to the view port</li>
+        <li>Sticky - page it sticks when the page is being scrolled <li>
+    </ol>
+
+    <div class="box">
+        <div class="minibox" id="Static">Static</div>
+        <div class="minibox" id="Relative">Relative</div>
+        <div class="minibox" id="Absolute">Absolute</div>
+        <div class="minibox" id="Sticky">Sticky</div>
+    </div>
+    <div id="Fixed">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero praesentium aliquam maxime molestiae mollitia dolor nobis qui fuga harum quis nostrum laborum necessitatibus temporibus asperiores repudiandae delectus, accusamus eligendi numquam sit beatae eius deserunt error atque nemo. Illo molestiae provident veniam, mollitia odit error quaerat in repudiandae pariatur perspiciatis possimus consequatur sint cupiditate delectus aspernatur nemo enim quae distinctio itaque rem iste nobis ipsum a! Nemo incidunt expedita similique excepturi, repellat quidem. Veniam doloribus earum praesentium suscipit fugit, natus laboriosam! Quaerat recusandae quas modi labore aspernatur perferendis atque rerum necessitatibus eos amet repellat at, nam inventore, assumenda adipisci esse accusamus.</p>
+</body>
+
+</html>

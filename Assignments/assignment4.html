@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    margin-right: 10px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    margin: 150px;
+    background-color: rgb(236, 234, 234);
+}
+table, tr, th, td{
+            border: 2px solid white;
+            border-collapse: collapse;
+        }
+
+        footer{
+            background-color: darkorchid;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar"></nav>
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBcr-Zx-gAJLPeK2dvrBzNLnUYlbK4gzy5A&s" alt="Booken logo">
+            <span>Booken</span>
+        </div>
+        <ul class="nav-links">
+            <li ><a href="#">Home</a></li>
+            <li ><a href="#">About Us</a></li>
+            <li ><a href="#">Shop</a></li>
+            <li ><a href="#">Blog</a></li>
+            <li ><a href="#">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <div class="form">
+    <form action="">
+        <h2><center>Create Account</center></h2>
+        <h5><center>Please Register using account detail bellow.</center></h5>
+        <label for="" class="form_">
+            First Name<br>
+            <input type="text">
+          </label><br>
+  
+          <label for="">
+              Last Name <br>
+              <input type="text">
+            </label><br>
+  
+            <label for="">
+              Email<br>
+              <input type="email">
+            </label><br>
+  
+            <label for="">
+              Password<br>
+              <input type="password" min="8" max="12">
+            </label><br>
+            <button>Create</button>
+            <br>
+            <p><a href="#">Return to store</a></p>
+    </form>
+    </div>
+
+        <table>
+            <tr>
+                <th >ABOUT INFO</th>
+                <th >INFORMATIONS </th>
+                 <TH>INFO LINKS</TH>
+                <TH>SUPPORT AREA</TH>
+            </tr>
+
+            <tr>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quasi iure ex.<br>
+                    <h4>Addresss: 123 Pall Mall, London England </h4>
+                    <h4>Email: hello@example.com</h4>
+                    <h4>Phone: (012) 345 6789</h4>
+                </td>
+
+                <td><ul>
+                    <li>Sign In</li>
+                    <li>View Cart</li>
+                    <li>My Wishlist</li>
+                    <li>Track My Order</li>
+                    <li>Help</li>
+                </ul></td>
+
+                <td><ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Shop</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                </ul></td>
+
+                <td><ul>
+                    <li>Hello & Contact</li>
+                    <li>Shipping & Tax</li>
+                    <li>Return Policy </li>
+                    <li>Affiliates</li>
+                    <li>Legal Notice</li>
+                </ul></td>
+
+            </tr>
+        </table>
+        <br>
+
+<footer class="footer">
+    <p><center>Copyright HasThemes | Built with <strong>Booken</strong> by HasThemes.</center></p>
+</footer>
+</body>
+</html>
