@@ -54,7 +54,7 @@
         }
 
         .mini_post{
-            background-color: rgb(139, 128, 128);
+            /* background-color: rgb(139, 128, 128); */
             padding: 1rem;
             border-radius: 0.5rem;
             width: 500px;
@@ -96,6 +96,60 @@
             align-items: center;
             justify-content: space-around;
         }
+
+      
+    .profile-pic {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-image: url('your-profile.jpg'); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      margin-right: 12px;
+    }
+
+    .status-input {
+      color: #65676b;
+      font-size: 16px;
+    }
+
+    .activity{
+        display: flex;
+        justify-content:space-evenly;
+
+    }
+
+
+    .story{
+            border: 2px solid rgb(15, 15, 15);
+            height: 150px;
+            display: flex;
+    }
+
+    #st1{
+            border: 2px solid;
+            height: 150px;
+            width: 100px;
+        }
+
+        #st2{
+            border: 2px solid;
+            height: 150px;
+            width: 100px;
+        }
+
+        #st3{
+            border: 2px solid;
+            height: 150px;
+            width: 100px;
+        }
+
+        #st4{
+            border: 2px solid;
+            height: 150px;
+            width: 100px;
+        }
+    
     </style>
 </head>
 <body>
@@ -184,19 +238,38 @@
 
             <div class="post">
 
+                 <div class="statusbox">
+                    <img src="https://i.pinimg.com/236x/25/09/28/250928d71a6334acd4c32d9059181a44.jpg" height="50px" width="50px" alt="profile">
+                    <div class="status-input">What's on your mind, Bijam?</div>
+                 </div>
 
-                <div class="mini_post">
+                    <div class="activity">
+                        <div><i class="fa-solid fa-eye"><span>Live video</span></i></div>
+                        <div><i class="fa-solid fa-image">Photos/video</i></div>
+                        <div><i class="fa-regular fa-face-smile">Feeling/activity</i></div>
+                    </div>
+
+
+
+                    <div class="story">
+                        <div class="story" id="st1"><img src="https://i.pinimg.com/736x/97/4f/4d/974f4d3de942d7b3ef369e11ca9e64d4.jpg" alt="story"></div>
+                        <div class="story" id="st2"><img src="https://i.pinimg.com/736x/f7/5d/2d/f75d2d7b9f7cda2eb61dcb7e7eaeb989.jpg" alt="story"></div>
+                        <div class="story" id="st3"><img src="https://i.pinimg.com/236x/9e/f9/46/9ef94673692f32652a02b041e14cf58c.jpg" alt="story"></div>
+                        <div class="story" id="st4"><img src="https://i.pinimg.com/236x/5f/e4/33/5fe43348374d9ed89d91989ce461d682.jpg" alt="story"></div>
+                    </div>
+
+                 <div class="mini_post">
 
                     <div class="profile">
                         <img src="https://i.pinimg.com/236x/25/09/28/250928d71a6334acd4c32d9059181a44.jpg" height="50px" width="50px" alt="profile">
                     </div>
                     <h3>Enlighted Ones</h3>
                     <span>Bijam Shakya. 2h</span>
+                    <p>Meditation🧘🏻‍♂️</p>
+                    <span>#highestintheroom</span>
 
                 </div>
 
-                <p>Meditation🧘🏻‍♂️</p>
-                <span>#highestintheroom</span>
                 
                 <div class="post_image">
 
@@ -213,6 +286,37 @@
                 </div>
 
 
+
+
+                <div class="mini_post">
+
+                    <div class="profile">
+                        <img src="https://i.pinimg.com/236x/25/09/28/250928d71a6334acd4c32d9059181a44.jpg" height="50px" width="50px" alt="profile">
+                    </div>
+                    <h3>Enlighted Ones</h3>
+                    <span>Bijam Shakya. 2h</span>
+                    <p>Meditation🧘🏻‍♂️</p>
+                    <span>#highestintheroom</span>
+
+                </div>
+
+                
+                <div class="post_image">
+
+                    <img src="https://i.pinimg.com/736x/5e/74/8f/5e748fe2e2569266616344cbafec51ba.jpg" width="500px" alt="meditation">
+
+                </div>
+
+                <div class="reactions">
+
+                     <div><i class="fa-solid fa-thumbs-up">Like</i></div>
+                 <div><i class="fa-solid fa-comment">Comment</i></div>
+                 <div><i class="fa-solid fa-share">Share</i></div>
+
+                </div>
+                
+
+
             </div>
 
 
@@ -220,6 +324,44 @@
             <div class="contacts">
 
 
+            <h4>Sponsored</h4>
+            <h6>Lorem, ipsum dolor.</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta assumenda ad quia, corrupti ea quasi.</p>
+            <img src="https://images.pexels.com/photos/31133725/pexels-photo-31133725/free-photo-of-streetlamp-amidst-blooming-cherry-blossoms-at-dusk.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" height="100px" width="150px" alt="sponsored">
+
+            <br>
+            <br>
+            <br>
+
+            <h4>Birthdays</h4>
+            <i class="fa-solid fa-gift"><span> Bijam, Bzam and other 3 have their birthdays today</span></i>
+
+            <br>
+            <br>
+            <br>
+
+            <h4>Contacts </h4>
+            <div class="profile">
+                <img src="https://i.pinimg.com/236x/25/09/28/250928d71a6334acd4c32d9059181a44.jpg" height="50px" width="50px" alt="profile">
+                <span>Bijam</span>
+            </div>
+            <div class="profile">
+                <img src="https://i.pinimg.com/236x/25/09/28/250928d71a6334acd4c32d9059181a44.jpg" height="50px" width="50px" alt="profile">
+                <span>Bijam</span>
+            </div>
+            <div class="profile">
+                <img src="https://i.pinimg.com/236x/25/09/28/250928d71a6334acd4c32d9059181a44.jpg" height="50px" width="50px" alt="profile">
+                <span>Bijam</span>
+            </div>
+            <div class="profile">
+                <img src="https://i.pinimg.com/236x/25/09/28/250928d71a6334acd4c32d9059181a44.jpg" height="50px" width="50px" alt="profile">
+                <span>Bijam</span>
+            </div>
+            <div class="profile">
+                <img src="https://i.pinimg.com/236x/25/09/28/250928d71a6334acd4c32d9059181a44.jpg" height="50px" width="50px" alt="profile">
+                <span>Bijam</span>
+            </div>
+            
 
 
             </div>
